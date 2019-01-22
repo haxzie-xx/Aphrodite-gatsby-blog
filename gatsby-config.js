@@ -3,6 +3,13 @@ module.exports = {
     title: `Aphrodite`,
     description: `Build your personal publication with Aphrodite without worrying much about SEO and Readability. Aphrodite is bootstrapped with Readability and User Experience in Mind. Go Ahead and fork this template for your contents and needs.`,
     author: `@haxzie`,
+    about: {
+      name: "Musthaq Ahamad",
+      bio: "I am a hobbyist designer and developer who loves working in the OSS space. Skilled in Python, Public Speaking, Graphic Design, Writing, and Android Development.",
+      github: "haxzie",
+      linkedin: "haxzie",
+      email: "musthu.gm@gmail.com"
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

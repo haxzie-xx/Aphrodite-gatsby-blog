@@ -4,6 +4,10 @@
 .homeLayout {
     display: flex;
     flex-direction: row;
+
+    @include respond-below(sm) {
+        flex-direction: column;
+    }
 }
 
 .caption {
@@ -20,5 +24,15 @@
     @include respond-below(sm) {
         width: auto;
         padding: 20px 0px 20px 0px;
+    }
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    @include respond-below(sm) {
+        width: auto;
     }
 }

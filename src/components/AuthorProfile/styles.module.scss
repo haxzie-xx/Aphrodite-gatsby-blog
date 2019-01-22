@@ -1,0 +1,62 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/media-queries';
+
+.authorLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 0px 10px 10px 10px;
+
+    @include respond-below(sm) {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+
+    @include respond-below(sm) {
+        padding: 20px auto;
+    }
+
+    .caption {
+        color: $primary-color;
+        margin: 0;
+    }
+    
+    .intro {
+        margin: 10px 0px 0px 0px;
+        font-size: 1.4em;
+        font-family: 'Source Serif Pro', sans-serif;
+
+        a {
+            color: $primary-color;
+
+            &:hover {
+                color: $type-color;
+            }
+        }
+    }
+
+    .bio {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .social {
+        margin-top: 10px;
+        img {
+            width: 22px;
+            height: 22px;
+            margin: 10px 20px 10px 10px;
+            opacity: 0.2;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

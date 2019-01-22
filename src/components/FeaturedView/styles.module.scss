@@ -43,6 +43,11 @@
 
 .typography {
 
+    margin: 0 10px 0 0;
+    @include respond-below(sm) {
+        margin: 0;
+    }
+
     h1 {
         margin: 10px 0px 10px 0px;
         &:after {
