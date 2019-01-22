@@ -1,0 +1,27 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/media-queries';
+
+.postItem {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        margin: 10px 0px 10px 0px;
+        &:after {
+            content: '.';
+            color: $primary-color;
+        }
+    }
+}
+
+.excerpt {
+    margin-bottom: 10px;
+}
+
+.date {
+    color: $type-faded;
+
+    span {
+        color: $primary-color;
+    }
+}

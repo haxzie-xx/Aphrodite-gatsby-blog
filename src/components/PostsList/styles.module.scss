@@ -1,0 +1,7 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/media-queries';
+
+.blogList {
+    display: flex;
+    flex-direction: column;
+}

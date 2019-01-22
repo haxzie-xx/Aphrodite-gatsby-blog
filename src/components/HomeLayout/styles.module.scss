@@ -1,0 +1,24 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/media-queries';
+
+.homeLayout {
+    display: flex;
+    flex-direction: row;
+}
+
+.caption {
+    color: $primary-color;
+    margin: 0;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+
+    @include respond-below(sm) {
+        width: auto;
+        padding: 20px 0px 20px 0px;
+    }
+}

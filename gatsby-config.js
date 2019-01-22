@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Aphrodite Gatsby Template`,
+    title: `Aphrodite`,
     description: `Build your personal publication with Aphrodite without worrying much about SEO and Readability. Aphrodite is bootstrapped with Readability and User Experience in Mind. Go Ahead and fork this template for your contents and needs.`,
     author: `@haxzie`,
   },
@@ -34,6 +34,12 @@ module.exports = {
         name: `blog-contents`,
         path: `${__dirname}/blog`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline

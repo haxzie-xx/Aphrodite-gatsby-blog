@@ -1,0 +1,45 @@
+@import '../../styles/sass/variables';
+@import '../../styles/sass/media-queries';
+
+.nav_bar {
+    background-color: white;
+    padding: 10px;
+    border-bottom: 1px solid #dbdada;
+    margin-bottom: 10px;
+
+    h1 {
+        font-size: 1.5em;
+        margin: 10px 0 10px 0;
+
+        &:after {
+            content: '.';
+            color: $primary-color;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $type-color;
+
+        &:visited {
+            color: $type-color;
+        }
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include respond-above(sm) {
+        width: 95%;
+    }
+
+    @include respond-below(sm) {
+        width: 85%;
+    }
+
+    @include respond-below(xs) {
+        width: 90%;
+    }
+}
