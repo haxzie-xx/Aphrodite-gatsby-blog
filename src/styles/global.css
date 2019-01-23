@@ -612,4 +612,36 @@ html {
       font-size: 100%;
     }
   }
+
+  .gatsby-highlight {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+  
+  .gatsby-highlight pre[class*='language-'] {
+    float: left;
+    min-width: 100%;
+  }
+
+  .gatsby-highlight-code-line {
+    background-color: hsla(207, 95%, 15%, 1);
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #ffa7c4;
+  }
+  
+  .gatsby-highlight {
+    background: #011627;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+  }
+  
+  .gatsby-highlight pre[class*='language-'] {
+    float: left;
+    min-width: 100%;
+  }
+  
   
