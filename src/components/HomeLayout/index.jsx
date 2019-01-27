@@ -5,11 +5,12 @@ import PostsList from '../PostsList';
 import AuthorProfile from '../AuthorProfile';
 
 const HomeLayout = ({ data }) => {
+
     return (
         <div className={ Styles.homeLayout }>
             <div className={ Styles.posts }>
                 <p className={ Styles.caption }>LATEST POSTS</p>
-                <PostsList/>
+                <PostsList posts={ data }/>
             </div>
             <div className={ Styles.news }>
                 <AuthorProfile/>

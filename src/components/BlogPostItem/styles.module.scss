@@ -11,6 +11,10 @@
             content: '.';
             color: $primary-color;
         }
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 }
 

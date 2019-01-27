@@ -3,7 +3,7 @@ import React from 'react';
 import Styles from './styles.module.scss';
 import Container from '../Container';
 
-const Footer = ({}) => {
+const Footer = () => {
     return (
         <footer class={ Styles.footer }>
             <Container>

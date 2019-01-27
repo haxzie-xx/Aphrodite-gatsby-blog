@@ -8,11 +8,11 @@ import LinkedInLogo from '../../images/linkedin-logo.svg';
 import GitHubLogo from '../../images/github-logo.svg';
 
 
-function getGhProfilePic(username) {
-    return `https://avatars.githubusercontent.com/${username}`;
-}
+// function getGhProfilePic(username) {
+//     return `https://avatars.githubusercontent.com/${username}`;
+// }
 
-const AuthorProfile = ({}) => {
+const AuthorProfile = () => {
 
     return (
         <StaticQuery
@@ -27,7 +27,8 @@ const AuthorProfile = ({}) => {
                             <p className={ Styles.bio }>{ userData.bio }</p>
                             <div className={ Styles.social }>
                                 <a href={ `https://twitter.com/${userData.twitter}`} ><img src={ TwitterLogo } alt="twitter"/></a>
-                                
+                                <a href={ `https://linkedin.com/in/${userData.twitter}`} ><img src={ LinkedInLogo } alt="linkedIn"/></a>
+                                <a href={ `https://github.com/${userData.twitter}`} ><img src={ GitHubLogo } alt="GitHub"/></a>
                             </div>
                         </div>
                     </div>

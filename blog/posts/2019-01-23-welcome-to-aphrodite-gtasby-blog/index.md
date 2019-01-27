@@ -5,7 +5,11 @@ title: "Welcome to Aphrodite - A minimal Gatsby blog"
 author: "haxzie"
 tags: ["welcome", "blog", "article"]
 cover: ""
+featured: false
+read_time: "5"
 ---
+
+<image src="https://cdn.dribbble.com/users/46302/screenshots/5352455/excellent.png"/>
 
 Lorem markdownum ipsa Theseus Aesacon, molis mediis carmen, postque. Magna
 eductam saepe adhuc postquam colorem atque flectitur Gorgoneas et
@@ -23,27 +27,27 @@ carinae quae [viribus](http://sorsnec.com/clausaequedixit.html).
 ```javascript
 var pre = env.element.parentNode;
         
-		var clsReg = /\s*\bline-numbers\b\s*/;
-		if (
-			!pre || !/pre/i.test(pre.nodeName) ||
-			// Abort only if nor the <pre> nor the <code> have the class
-			(!clsReg.test(pre.className) && !clsReg.test(env.element.className))
-		) {
-			return;
-		}
+var clsReg = /\s*\bline-numbers\b\s*/;
+if (
+	!pre || !/pre/i.test(pre.nodeName) ||
+	// Abort only if nor the <pre> nor the <code> have the class
+	(!clsReg.test(pre.className) && !clsReg.test(env.element.className))
+) {
+	return;
+}
 
-		if (env.element.querySelector('.line-numbers-rows')) {
-			// Abort if line numbers already exists
-			return;
-		}
+if (env.element.querySelector('.line-numbers-rows')) {
+	// Abort if line numbers already exists
+	return;
+}
 
-		if (clsReg.test(env.element.className)) {
-			// Remove the class 'line-numbers' from the <code>
-			env.element.className = env.element.className.replace(clsReg, ' ');
-		}
-		if (!clsReg.test(pre.className)) {
-			// Add the class 'line-numbers' to the <pre>
-			pre.className += ' line-numbers';
+if (clsReg.test(env.element.className)) {
+	// Remove the class 'line-numbers' from the <code>
+	env.element.className = env.element.className.replace(clsReg, ' ');
+}
+if (!clsReg.test(pre.className)) {
+	// Add the class 'line-numbers' to the <pre>
+	pre.className += ' line-numbers';
 }
 ```
 
